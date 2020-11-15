@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block js %}
+<script src="static/digits.js" defer></script>
+{% endblock %}
+
+{% block title %} My Projects {% endblock %}
+
+{% block content %}
+<div class='title'>Digit Classifier</div>
+
+<div id='digitContainer'>
+    <div id="digitCanvas">
+        <canvas id="canvas" width='280px' height='280px'></canvas>
+        
+        
+        <div id='digitClear'>
+            <button type='button' onclick="resetCanvas();">Clear</button>
+        </div>
+    </div>
+    <div id="digitPrediction">
+        <div id="digitPredictionHeader">
+            Prediction
+        </div>
+        <div id="digitPredictionValue">
+            0
+        </div>
+    </div>
+    <div id="digitGraphContainer">
+        <div class="digitGraphBar" id='digit0'>
+            <div class="digitGraphTop" id='digit0top'></div>
+            <div class="digitGraphBot" id='digit0bot'></div>
+            <div class="digitGraphLabel">0</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit1'>
+            <div class="digitGraphTop" id='digit1top'></div>
+            <div class="digitGraphBot" id='digit1bot'></div>
+            <div class="digitGraphLabel">1</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit2'>
+            <div class="digitGraphTop" id='digit2top'></div>
+            <div class="digitGraphBot" id='digit2bot'></div>
+            <div class="digitGraphLabel">2</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit3'>
+            <div class="digitGraphTop" id='digit3top'></div>
+            <div class="digitGraphBot" id='digit3bot'></div>
+            <div class="digitGraphLabel">3</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit4'>
+            <div class="digitGraphTop" id='digit4top'></div>
+            <div class="digitGraphBot" id='digit4bot'></div>
+            <div class="digitGraphLabel">4</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit5'>
+            <div class="digitGraphTop" id='digit5top'></div>
+            <div class="digitGraphBot" id='digit5bot'></div>
+            <div class="digitGraphLabel">5</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit6'>
+            <div class="digitGraphTop" id='digit6top'></div>
+            <div class="digitGraphBot" id='digit6bot'></div>
+            <div class="digitGraphLabel">6</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit7'>
+            <div class="digitGraphTop" id='digit7top'></div>
+            <div class="digitGraphBot" id='digit7bot'></div>
+            <div class="digitGraphLabel">7</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit8'>
+            <div class="digitGraphTop" id='digit8top'></div>
+            <div class="digitGraphBot" id='digit8bot'></div>
+            <div class="digitGraphLabel">8</div>
+        </div>
+
+        <div class="digitGraphBar" id='digit9'>
+            <div class="digitGraphTop" id='digit9top'></div>
+            <div class="digitGraphBot" id='digit9bot'></div>
+            <div class="digitGraphLabel">9</div>
+        </div>
+
+    </div>
+    
+</div>
+
+{% endblock %}
